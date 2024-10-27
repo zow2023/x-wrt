@@ -1514,7 +1514,6 @@ $(eval $(call KernelPackage,inet-mptcp-diag))
 define KernelPackage/xdp-sockets-diag
   SUBMENU:=$(NETWORK_SUPPORT_MENU)
   TITLE:=PF_XDP sockets monitoring interface support for ss utility
-  DEPENDS:=@KERNEL_XDP_SOCKETS
   KCONFIG:=\
         CONFIG_XDP_SOCKETS=y \
 	CONFIG_XDP_SOCKETS_DIAG
